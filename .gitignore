@@ -1,0 +1,32 @@
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Local database or temp JSON files that shouldn't be overwritten on git
+# (အကယ်၍ result.json သို့မဟုတ် auth_list.json တွေကို local မှာ စမ်းပြီး git တင်စရာမလိုရင် ဖြုတ်လို့ရပါတယ်)
+# result.json
+# auth_list.json
+
+# Environment variables / Configs
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
