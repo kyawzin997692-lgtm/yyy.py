@@ -1652,6 +1652,9 @@ async def start_polling():
     backoff = 5
     while True:
         try:
+            # Webhook conflict error တက်ခြင်းမှ ကာကွယ်ရန် Webhook ကို အရင်ရှင်းထုတ်ခြင်း
+            await bot.remove_webhook()
+            
             await bot.infinity_polling(timeout=20, request_timeout=20)
             return
         except (aiohttp.ClientError, asyncio.TimeoutError) as e:
